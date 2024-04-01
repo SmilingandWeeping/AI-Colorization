@@ -1,9 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2024-04-01T12:03:49.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" version="24.0.7" etag="5fMdrI8W6jAl7uV6Tj1n" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-01T12:10:43.176Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="bjAXNnXZpT0SPZ-15xxt" version="24.0.7" type="github">
   <diagram name="第 1 页" id="vG8Bw2dGSTPy_CpGYrH1">
-    <mxGraphModel>
+    <mxGraphModel dx="1002" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_TP8BTlposC3IhHWH7jg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-2" value="开始分治" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-7" target="_TP8BTlposC3IhHWH7jg-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-7" value="定义一些变量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-9" value="如果l&amp;gt;r,返回0" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-12" value="如果l==r || l+1==r，返回最大数字的下标" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="220" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-14" target="_TP8BTlposC3IhHWH7jg-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-14" value="调用dfs分治左半部分" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="230" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_TP8BTlposC3IhHWH7jg-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-16" value="调用dfs分治右半部分" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="330" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_TP8BTlposC3IhHWH7jg-18" value="返回左右部分最大值的下标" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
